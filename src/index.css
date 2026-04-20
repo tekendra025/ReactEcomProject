@@ -2,6 +2,7 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+
 @theme{
     --color-primary: #f59e0b
 }
@@ -9,5 +10,15 @@
 @layer components{
     .container{
         @apply max-w-6xl mx-auto px-4
+    }
+    .section-btn{
+        @apply bg-primary px-9 py-2 rounded-full text-lg
+    }
+    .primary-btn{
+     @apply   px-5 py-2 bg-primary capitalize rounded-md font-medium duration-300 hover:bg-red-500
+    }
+    .secondary-btn{
+        @apply border-2 border-white text-white px-5 py-2 rounded-md hover:bg-white hover:text-black
+                text-sm md:text-base duration-500
     }
 }

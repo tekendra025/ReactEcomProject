@@ -14,17 +14,17 @@ const Navbar = () => {
   const handelMenuToggle = ()=> setMenu (!showMenu)
   
   return (
-    <div>
+    <div className="sticky top-0 z-50">
       <div>
         {/* top */}
-        <div className="bg-primary">
-          <div className=" container hidden bg-primary lg:flex items-center justify-between py-2">
-           <div className="flex items-center gap-4">
+        <div className="bg-primary hidden lg:flex">
+          <div className="container flex items-center justify-between py-2">
+          <div className="flex items-center gap-4">
             <p><FaPhoneAlt /></p>
             <p>+9777-5825525</p>
-           </div>
+          </div>
           <p>Free Shipping on Orders Above Rs. 2000</p>
-         </div>
+        </div>
         </div>
 
         {/* bottom */}
@@ -45,7 +45,7 @@ const Navbar = () => {
                     <Darkmode/>
                     </ul>
                 </div>
-               {/* responsive = mobile view */}
+{/* responsive = mobile view */}
                 <div className="flex lg:hidden items-center gap-4 px-3">
                   <Darkmode/>
                           {showMenu ? (
@@ -54,6 +54,7 @@ const Navbar = () => {
                             <CiMenuBurger onClick={handelMenuToggle}/>
                           )}
                 </div>
+
 
             </div>
         </div>
